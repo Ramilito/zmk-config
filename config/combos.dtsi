@@ -16,3 +16,4 @@ compatible = "zmk,combos";
     layers = <LAYERS>; \
   };
 
+COMBO(left_parenthesis, &kp LEFT_PARENTHESIS, 1 2, NUM)
