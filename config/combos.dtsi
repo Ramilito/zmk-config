@@ -7,27 +7,25 @@
  ╰──────────╮ 36  37 38 │ │ 39  40  41 ╭──────────╯
             ╰───────────╯ ╰────────────╯            */
   
-/ {
-  combos {
-    compatible = "zmk,combos";
+compatible = "zmk,combos";
 
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
-      combo_##NAME { \
-        bindings = <BINDINGS>; \
-        key-positions = <KEYPOS>; \
-        layers = <LAYERS>; \
-    }; 
+  combo_##NAME { \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <LAYERS>; \
+}; 
 
-    COMBO(shift_left, &sm LSHFT, 16 37, BASE)
-    COMBO(shift_right, &sm LSHFT, 19 40, BASE)
+COMBO(shift, &skq LSHFT, 37 40, BASE)
 
-    COMBO(ctrl_left, &sm LCTRL, 15 37, BASE)
-    COMBO(ctrl_right, &sm LCTRL, 20 40, BASE)
-
-    COMBO(alt_left, &sm LALT, 14 37, BASE)
-    COMBO(alt_right, &sm LALT, 21 40, BASE)
-
-    COMBO(gui_left, &sm LGUI, 13 37, BASE)
-    COMBO(gui_right, &sm LGUI, 22 40, BASE)
-  };
-};
+/* COMBO(shift_left, &sm LSHFT, 16 37, BASE) */
+/* COMBO(shift_right, &sm LSHFT, 19 40, BASE) */
+/**/
+/* COMBO(ctrl_left, &sm LCTRL, 15 37, BASE) */
+/* COMBO(ctrl_right, &sm LCTRL, 20 40, BASE) */
+/**/
+/* COMBO(alt_left, &sm LALT, 14 37, BASE) */
+/* COMBO(alt_right, &sm LALT, 21 40, BASE) */
+/**/
+/* COMBO(gui_left, &sm LGUI, 13 37, BASE) */
+/* COMBO(gui_right, &sm LGUI, 22 40, BASE) */
