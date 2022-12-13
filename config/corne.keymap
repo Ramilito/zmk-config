@@ -16,6 +16,6 @@
   debounce-period = <14>;
 };
 
-include "behaviors.dtsi"
+include "custom_behaviors.dtsi"
 # include "combos.dtsi"
 include "keymap.dtsi"
