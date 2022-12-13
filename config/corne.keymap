@@ -15,23 +15,11 @@
 &kscan0 {
   debounce-period = <14>;
 };
+
 / {
-    combos {
-
-      compatible = "zmk,combos";
-
-      #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
-        combo_##NAME { \
-          bindings = <BINDINGS>; \
-          key-positions = <KEYPOS>; \
-          layers = <LAYERS>; \
-        };
-
-      #include "combos.dtsi" 
-    };
+  combos {
+    #include "combos.dtsi" 
   };
-/ {
-
   behaviors {
     skq: sticky_key_quick_release {
       compatible = "zmk,behavior-sticky-key";
