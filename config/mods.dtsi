@@ -50,7 +50,7 @@ u_lt: u_lt {
 
 u_td: u_td {
     compatible = "zmk,behavior-tap-dance";
-    label = "TAP_DANCE_COLON";
+    label = "u_td";
     #binding-cells = <0>;
     tapping-term-ms = <200>;
     bindings = <&kp>, <&kp>;
