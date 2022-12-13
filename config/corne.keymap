@@ -17,9 +17,11 @@
 };
 
 / {
+
   combos {
     #include "combos.dtsi" 
   };
+  #include "swe.dtsi"
   behaviors {
     #include "mods.dtsi" 
   };
