@@ -20,10 +20,8 @@
   behaviors {
     include "custom_behaviors.dtsi"
   };
-};
 # include "combos.dtsi"
 
-/ {
   keymap {
     include "keymap.dtsi"
   };
