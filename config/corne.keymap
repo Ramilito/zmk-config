@@ -53,19 +53,6 @@
 
   };
 
-  combos {
-    compatible = "zmk,combos";
-     #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
-      combo_##NAME { \
-        bindings = <BINDINGS>; \
-        key-positions = <KEYPOS>; \
-        layers = <LAYERS>; \
-    }; 
-
-    COMBO(shift, &skq LSHFT, 37 40, BASE) 
-
-  };
-
   keymap {
     compatible = "zmk,keymap";
 
@@ -79,7 +66,7 @@
         // ├─────────────┼────────────┼────────────┼─────────────┼─────────────┼─────────────┤       ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
              XXX           &kp Z        &kp X         &kp C         &kp D        &kp V                 &kp K         &kp H         &kp COMMA     &kp DOT       &kp SLASH      XXX
         // ╰─────────────┴────────────┴────────────┴─────────────┴─────────────┼─────────────┤       ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────┴─────────────╯
-                                                      &kp ESC      MO(NAV)       &kp SPACE             &kp ENTER     MO(NUM)       &kp DEL
+                                                      &kp ESC       MO(NAV)      &skq LSHFT            &kp ENTER     MO(NUM)       &kp DEL
         //                                         ╰─────────────┴─────────────┴─────────────╯       ╰─────────────┴─────────────┴─────────────╯
       >;
     };
