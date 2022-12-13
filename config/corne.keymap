@@ -15,11 +15,13 @@
 &kscan0 {
   debounce-period = <14>;
 };
-
 / {
-  combos {
-    #include "combos.dtsi" 
+    combos {
+      #include "combos.dtsi" 
+    };
   };
+/ {
+
   behaviors {
     skq: sticky_key_quick_release {
       compatible = "zmk,behavior-sticky-key";
