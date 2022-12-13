@@ -17,6 +17,9 @@
 };
 
 / {
+  combos {
+    #include "combos.dtsi" 
+  };
   behaviors {
     skq: sticky_key_quick_release {
       compatible = "zmk,behavior-sticky-key";
@@ -48,9 +51,6 @@
       flavor = "hold-preferred";
       bindings = <&mo>, <&kp>;
     };
-  };
-  combos {
-    #include "combos.dtsi" 
   };
   keymap {
     #include "keymap.dtsi" 
