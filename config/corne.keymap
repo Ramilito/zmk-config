@@ -19,6 +19,7 @@
     #include "combos.dtsi" 
   };
   behaviors {
+    #include "swe.dtsi"
     #include "mods.dtsi" 
   };
   keymap {
