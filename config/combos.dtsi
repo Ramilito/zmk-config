@@ -18,7 +18,7 @@ compatible = "zmk,combos";
 
 COMBO(left_parenthesis, &kp LEFT_PARENTHESIS, 1 2, NUM)
 COMBO(right_parenthesis, &kp RIGHT_PARENTHESIS, 2 3, NUM)
-COMBO(parentheses, &macro_parentheses, 1 2 3, NUM)
+/* COMBO(parentheses, &macro_parentheses, 1 2 3, NUM) */
 COMBO(left_bracket, &kp LEFT_BRACKET, 11 12, NUM)
 COMBO(right_bracket, &kp RIGHT_BRACKET, 12 13, NUM)
 COMBO(brackets, &macro_brackets, 11 12 13, NUM)
