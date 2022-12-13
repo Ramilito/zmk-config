@@ -54,7 +54,16 @@
   };
 
   combos {
-    include "combos.dtsi"
+    compatible = "zmk,combos";
+     #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
+      combo_##NAME { \
+        bindings = <BINDINGS>; \
+        key-positions = <KEYPOS>; \
+        layers = <LAYERS>; \
+    }; 
+
+    COMBO(shift, &skq LSHFT, 37 40, BASE) 
+
   };
 
   keymap {
