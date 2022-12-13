@@ -53,5 +53,5 @@ u_td: u_td {
     label = "u_td";
     #binding-cells = <0>;
     tapping-term-ms = <200>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&kp COLON>, <&kp SEMI>;
 };
