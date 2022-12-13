@@ -17,12 +17,10 @@
 };
 
 
+include "combos.dtsi"
+
 / {
   behaviors {
-
-    combos {
-      include "combos.dtsi"
-    };
 
 #     macros {
 # #include "macros.dtsi"
@@ -75,7 +73,6 @@
              XXX           &kp Z        &kp X        &kp C         &kp D         &kp V                 &kp K         &kp H         &kp COMMA     &kp DOT       &kp SLASH      XXX
         // ╰─────────────┴────────────┴────────────┴─────────────┴─────────────┼─────────────┤       ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────┴─────────────╯
                                                      &kp ESC       &lt NAV SPACE &kp TAB               &kp ENTER     &lt NUM BSPC  &kp DEL
-        //                                           &kp ESC       MO(NAV)       &skq LSHIFT           &kp ENTER     MO(NUM)       &kp BSPC
         //                                         ╰─────────────┴─────────────┴─────────────╯       ╰─────────────┴─────────────┴─────────────╯
       >;
     };
