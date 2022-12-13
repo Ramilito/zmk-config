@@ -49,6 +49,9 @@
       bindings = <&mo>, <&kp>;
     };
   };
+  combos {
+    #include "combos.dtsi" 
+  };
   keymap {
     #include "keymap.dtsi" 
   };
