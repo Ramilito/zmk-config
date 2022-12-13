@@ -16,13 +16,9 @@
   debounce-period = <14>;
 };
 
-# &skq LSHIFT
-#
 / {
 
-  combos {
-    include "combos.dtsi"
-  };
+
   behaviors {
 
     skq: sticky_key_quick_release {
