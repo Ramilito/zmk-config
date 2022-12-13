@@ -16,13 +16,8 @@
   debounce-period = <14>;
 };
 
-
 / {
   behaviors {
-
-#     macros {
-# #include "macros.dtsi"
-#     };
 
     skq: sticky_key_quick_release {
       compatible = "zmk,behavior-sticky-key";
@@ -64,13 +59,13 @@
       label = "BASE";
       bindings = <
         // ╭─────────────┬────────────┬────────────┬─────────────┬─────────────┬─────────────╮       ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             XXX           &kp Q        &kp W        &kp F         &kp P         &kp B                 &kp J         &kp L         &kp U         &kp Y         &kp SQT        XXX
+             XXX           &kp Q        &kp W         &kp F         &kp P        &kp B                 &kp J         &kp L         &kp U         &kp Y         &kp SQT        XXX
         // ├─────────────┼────────────┼────────────┼─────────────┼─────────────┼─────────────┤       ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-             XXX           &kp A        &kp R        &kp S         &kp T         &kp G                 &kp M         &kp N         &kp E         &kp I         &kp O          XXX
+             XXX           &kp A        &kp R         &kp S         &kp T        &kp G                 &kp M         &kp N         &kp E         &kp I         &kp O          XXX
         // ├─────────────┼────────────┼────────────┼─────────────┼─────────────┼─────────────┤       ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-             XXX           &kp Z        &kp X        &kp C         &kp D         &kp V                 &kp K         &kp H         &kp COMMA     &kp DOT       &kp SLASH      XXX
+             XXX           &kp Z        &kp X         &kp C         &kp D        &kp V                 &kp K         &kp H         &kp COMMA     &kp DOT       &kp SLASH      XXX
         // ╰─────────────┴────────────┴────────────┴─────────────┴─────────────┼─────────────┤       ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────┴─────────────╯
-                                                     &kp ESC       &kp SPACE    &kp TAB               &kp ENTER     &kp BSPC  &kp DEL
+                                                      &kp ESC      MO(NAV)       &skq LSHIFT           &kp ENTER     MO(NUM)       &kp DEL
         //                                         ╰─────────────┴─────────────┴─────────────╯       ╰─────────────┴─────────────┴─────────────╯
       >;
     };
