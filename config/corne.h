@@ -6,6 +6,8 @@
 #define SYM 2
 #define NUM 3
 #define MEDIA 4
+#define FUN 5
+#define MOUSE 6
 
 #define SK(KEY) &nk KEY KEY
 #define MO(LAYER) &mo_tap LAYER F24
