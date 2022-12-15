@@ -15,12 +15,12 @@
 
 / {
 
-  combos {
-    #include "combos.dtsi" 
-  };
   behaviors {
     #include "swe.dtsi"
     #include "mods.dtsi" 
+  };
+  combos {
+    #include "combos.dtsi" 
   };
   keymap {
     #include "keymap.dtsi" 
