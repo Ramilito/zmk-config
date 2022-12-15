@@ -22,7 +22,6 @@
 #define UC 5
 #define MWH 6
 
-#include "combos.dtsi"  // must be sourced after layer-shortcuts
 
 // ZMK_CONDITIONAL_LAYER(SYS NUM, FN)  // SYS + NUM --> FN
 
