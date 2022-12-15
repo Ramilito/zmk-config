@@ -17,6 +17,18 @@ compatible = "zmk,combos";
   };
 
 
+COMBO(shift_left, &sm LSHFT, 16 37, BASE)
+COMBO(shift_right, &sm LSHFT, 19 40, BASE)
+
+COMBO(ctrl_left, &sm LCTRL, 15 37, BASE)
+COMBO(ctrl_right, &sm LCTRL, 20 40, BASE)
+
+COMBO(alt_left, &sm LALT, 14 37, BASE)
+COMBO(alt_right, &sm LALT, 21 40, BASE)
+
+COMBO(gui_left, &sm LGUI, 13 37, BASE)
+COMBO(gui_right, &sm LGUI, 22 40, BASE)
+
 /* COMBO(undo, &kp LG(Z), 20 21, BASE) */
 /* COMBO(cut, &kp LG(X), 21 23, BASE) */
 /* COMBO(copy, &kp LG(C), 21 22, BASE) */
