@@ -26,7 +26,6 @@
 #define U_TAPPING_TERM 200
 #define QUICK_TAP_MS 175
 
-
 // Apple "Globe" key
 // https://github.com/zmkfirmware/zmk/issues/947
 #define GLOBE CAPSLOCK
