@@ -38,16 +38,16 @@
 #define THUMBS LH2 LH1 LH0 RH0 RH1 RH2                                      // thumb keys
 
 
-/ {
-
-  behaviors {
-    #include "swe.dtsi"
-    #include "mods.dtsi" 
-  };
-  keymap {
-    #include "keymap.dtsi" 
-  };
-  combos {
-    #include "combos.dtsi" 
-  };
-};
+/* / { */
+/**/
+/*   behaviors { */
+/*     #include "swe.dtsi" */
+/*     #include "mods.dtsi"  */
+/*   }; */
+/*   keymap { */
+/*     #include "keymap.dtsi"  */
+/*   }; */
+/*   combos { */
+/*     #include "combos.dtsi"  */
+/*   }; */
+/* }; */
