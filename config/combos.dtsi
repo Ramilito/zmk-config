@@ -11,11 +11,11 @@ compatible = "zmk,combos";
 
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
   combo_##NAME { \
+    timeout-ms = <COMBO_TIMEOUT>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = <LAYERS>; \
   };
-
 
 COMBO(shift_left, &skq LSHFT, 16 37, BASE)
 COMBO(shift_right, &skq LSHFT, 19 40, BASE)
