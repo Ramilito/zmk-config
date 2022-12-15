@@ -45,7 +45,7 @@
 /*     hold-trigger-key-positions = <KEYS_R THUMBS>; */
 /* ) */
 /**/
-ZMK_BEHAVIOR(hmr, hold_tap,  // right-hand HRMs
+ZMK_BEHAVIOR(hmr, sticky_key,  // right-hand HRMs
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <125>;
