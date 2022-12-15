@@ -31,10 +31,6 @@
     hold-trigger-key-positions = <0>;  // tap on interrupt
 };
 
-
-
-#include "test.dtsi"
-
 / {
 
   behaviors {
