@@ -12,6 +12,22 @@
   continue-list = <UNDERSCORE MINUS BACKSPACE>;
 };
 
+&sl {  // sticky-layer config
+    ignore-modifiers;
+};
+
+&lt {  // layer-tap config
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+};
+
+&mt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <220>;
+    quick-tap-ms = <220>;              // repeat on tap-into-hold
+    hold-trigger-key-positions = <0>;  // tap on interrupt
+};
 
 / {
 
