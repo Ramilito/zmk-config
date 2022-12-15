@@ -10,7 +10,7 @@
 #define MOUSE 6
 
 #define SK(KEY) &nk KEY KEY
-#define MO(LAYER) &mo_tap LAYER F24
+#define MO(LAYER, TAP) &mo_tap LAYER TAP
 
 #define U_MT(MOD, TAP) &u_mt MOD TAP
 #define U_LT(LAYER, TAP) &u_lt LAYER TAP
