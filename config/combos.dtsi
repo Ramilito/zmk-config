@@ -17,7 +17,7 @@ compatible = "zmk,combos";
     layers = <LAYERS>; \
   };
 
-COMBO(shift_left, &skq LSHFT, 16 37, BASE)
+COMBO(shift_left, SK(LSHFT), 16 37, BASE)
 COMBO(shift_right, &skq LSHFT, 19 40, BASE)
 
 COMBO(ctrl_left, &skq LCTRL, 15 37, BASE)
