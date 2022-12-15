@@ -63,7 +63,7 @@ u_td: u_td {
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RT5 RM0 RM1 RM2 RM3 RM4 LM5 RB0 RB1 RB2 RB3 RB4 LB5 // right-hand keys
 #define THUMBS LH2 LH1 LH0 RH0 RH1 RH2                                      // thumb keys
 
-hml: homerow_mods_quick_left {
+hm_l: homerow_mods_quick_left {
   compatible = "zmk,behavior-hold-tap";
   label = "HOMEROW_MODS_QUICK";
   flavor = "balanced";
@@ -71,9 +71,8 @@ hml: homerow_mods_quick_left {
   quick-tap-ms = <125>;
   #binding-cells = <2>;
   bindings = <&kp>, <&kp>;
-  hold-trigger-key-positions = <KEYS_R THUMBS>;
 };
-hmr: homerow_mods_quick_right {
+hm_r: homerow_mods_quick_right {
   compatible = "zmk,behavior-hold-tap";
   label = "HOMEROW_MODS_QUICK";
   flavor = "balanced";
@@ -81,6 +80,5 @@ hmr: homerow_mods_quick_right {
   quick-tap-ms = <125>;
   #binding-cells = <2>;
   bindings = <&kp>, <&kp>;
-  hold-trigger-key-positions = <KEYS_L THUMBS>;
 };
 
