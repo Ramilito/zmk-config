@@ -1,3 +1,14 @@
+#define ZMK_BEHAVIOR(name, type, ...) \
+    / { \
+        behaviors { \
+            name: name { \
+                label = ZMK_HELPER_STRINGIFY(ZB_ ## name); \
+                ZMK_BEHAVIOR_CORE_ ## type; \
+                __VA_ARGS__ \
+            }; \
+        }; \
+    };
+
 skq: sticky_key_quick_release {
   compatible = "zmk,behavior-sticky-key";
   label = "STICKY_KEY_QUICK_RELEASE";
