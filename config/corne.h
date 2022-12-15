@@ -16,8 +16,8 @@
 #define U_LT(LAYER, TAP) &u_lt LAYER TAP
 #define U_TD(ONE, TWO) &u_td ONE TWO
 
-#define HML(LAYER, TAP) &hm_l LAYER TAP
-#define HMR(LAYER, TAP) &hm_r LAYER TAP
+#define HML(LAYER, TAP) &hmq LAYER TAP
+#define HMR(LAYER, TAP) &hmq LAYER TAP
 
 #define _BT_SEL_KEYS_ &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
 #define _BT_CFG_KEYS_ &bt BT_CLR &trans &out OUT_TOG
