@@ -17,17 +17,17 @@ compatible = "zmk,combos";
     layers = <LAYERS>; \
   };
 
-COMBO(shift_left, SK(LSHFT), 16 37, BASE)
-COMBO(shift_right, SK(LSHFT), 19 40, BASE)
+COMBO(shift_left, &skq LSHFT, 16 37, BASE)
+COMBO(shift_right, &skq LSHFT, 19 40, BASE)
 
-COMBO(ctrl_left, SK(LCTRL), 15 37, BASE)
-COMBO(ctrl_right, SK(LCTRL), 20 40, BASE)
+COMBO(ctrl_left, &skq LCTRL, 15 37, BASE)
+COMBO(ctrl_right, &skq LCTRL, 20 40, BASE)
 
-COMBO(alt_left, SK(LALT), 14 37, BASE)
-COMBO(alt_right, SK(LALT), 21 40, BASE)
+COMBO(alt_left, &skq LALT, 14 37, BASE)
+COMBO(alt_right, &skq LALT, 21 40, BASE)
 
-COMBO(gui_left, SK(LGUI), 13 37, BASE)
-COMBO(gui_right, SK(LGUI), 22 40, BASE)
+COMBO(gui_left, &skq LGUI, 13 37, BASE)
+COMBO(gui_right, &skq LGUI, 22 40, BASE)
 
 /* COMBO(undo, &kp LG(Z), 20 21, BASE) */
 /* COMBO(cut, &kp LG(X), 21 23, BASE) */
