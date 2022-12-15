@@ -31,9 +31,3 @@
 // https://github.com/zmkfirmware/zmk/issues/947
 #define GLOBE CAPSLOCK
 
-#define NAV_LEFT  &mt HOME     LEFT    // tap: left  | long-tap: beginning of line
-#define NAV_RIGHT &mt END      RIGHT   // tap: right | long-tap: end       of line
-#define NAV_UP    &mt LC(HOME) UP      // tap: up    | long-tap: beginning of document
-#define NAV_DOWN  &mt LC(END)  DOWN    // tap: down  | long-tap: end       of document
-#define NAV_BSPC  &mt LC(BSPC) BSPC    // tap: bspc  | long-tap: delete word backward
-#define NAV_DEL   &mt LC(DEL)  DEL     // tap: del   | long-tap: delete word forward
