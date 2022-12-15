@@ -37,6 +37,25 @@
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RT5 RM0 RM1 RM2 RM3 RM4 LM5 RB0 RB1 RB2 RB3 RB4 LB5 // right-hand keys
 #define THUMBS LH2 LH1 LH0 RH0 RH1 RH2                                      // thumb keys
 
+ZMK_BEHAVIOR(hml, hold_tap,  // left-hand HRMs
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    global-quick-tap;
+    bindings = <&kp>, <&kp>;
+    hold-trigger-key-positions = <KEYS_R THUMBS>;
+)
+
+ZMK_BEHAVIOR(hmr, hold_tap,  // right-hand HRMs
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <125>;
+    global-quick-tap;
+    bindings = <&kp>, <&kp>;
+    hold-trigger-key-positions = <KEYS_L THUMBS>;
+)
+
+
 #include "test.dtsi"
 
 /* / { */
