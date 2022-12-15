@@ -19,10 +19,10 @@
     #include "swe.dtsi"
     #include "mods.dtsi" 
   };
-  combos {
-    #include "combos.dtsi" 
-  };
   keymap {
     #include "keymap.dtsi" 
+  };
+  combos {
+    #include "combos.dtsi" 
   };
 };
