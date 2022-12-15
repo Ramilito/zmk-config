@@ -39,7 +39,8 @@
 ZMK_BEHAVIOR(hml, hold_tap,  // left-hand HRMs
     flavor = "balanced";
     tapping-term-ms = <280>;
-    quick-tap-ms = <QUICK_TAP_MS>;
+    quick-tap-ms = <125>;
+    global-quick-tap;
     bindings = <&kp>, <&kp>;
     hold-trigger-key-positions = <KEYS_R THUMBS>;
 )
@@ -47,7 +48,8 @@ ZMK_BEHAVIOR(hml, hold_tap,  // left-hand HRMs
 ZMK_BEHAVIOR(hmr, hold_tap,  // right-hand HRMs
     flavor = "balanced";
     tapping-term-ms = <280>;
-    quick-tap-ms = <QUICK_TAP_MS>;
+    quick-tap-ms = <125>;
+    global-quick-tap;
     bindings = <&kp>, <&kp>;
     hold-trigger-key-positions = <KEYS_L THUMBS>;
 )
