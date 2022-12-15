@@ -4,6 +4,9 @@
 #include <dt-bindings/zmk/outputs.h>
 #include "corne.h"
 
+#include "../zmk-nodefree-config/helper.h"
+#include "../zmk-nodefree-config/international_chars/swedish.dtsi"
+
 &sk {
   release-after-ms = <STICKY_KEY_TIMEOUT>;
 };
