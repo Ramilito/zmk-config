@@ -4,7 +4,6 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #include "../zmk-nodefree-config/helper.h"
-#include "../zmk-nodefree-config/international_chars/swedish.dtsi"
 
 #include "corne.h"
 &sk {
