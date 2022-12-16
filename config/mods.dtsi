@@ -1,4 +1,5 @@
 #include "../zmk-nodefree-config/keypos_def/keypos_42keys.h"
+#include "../zmk-nodefree-config/helper.h"
 
 skq: sticky_key_quick_release {
   compatible = "zmk,behavior-sticky-key";
@@ -97,4 +98,23 @@ hm_r: homerow_mods_quick_right {
   #binding-cells = <2>;
   bindings = <&kp>, <&kp>;
 };
+
+ZMK_BEHAVIOR(hml, hold_tap,  // left-hand HRMs
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+    global-quick-tap-ms = <150>;        // requires PR #1387
+    bindings = <&kp>, <&kp>;
+    hold-trigger-key-positions = <KEYS_R THUMBS>;
+    hold-trigger-on-release;            // requires PR #1423
+)
+
+ZMK_BEHAVIOR(hmr, hold_tap,  // right-hand HRMs
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+    global-quick-tap;
+    bindings = <&kp>, <&kp>;
+    hold-trigger-key-positions = <KEYS_L THUMBS>;
+)
 
