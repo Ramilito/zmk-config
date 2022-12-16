@@ -71,25 +71,3 @@ hmq: homerow_mods_quick {
   /* retro-tap; */
 };
 
-
-hm_l: homerow_mods_quick_left {
-  compatible = "zmk,behavior-hold-tap";
-  label = "HOMEROW_MODS_QUICK";
-  flavor = "balanced";
-  tapping-term-ms = <280>;                        // <---[[produces tap if held longer than tapping-term-ms]]
-  quick-tap-ms = <125>;
-  #binding-cells = <2>;
-  global-quick-tap;
-  bindings = <&kp>, <&kp>;
-};
-hm_r: homerow_mods_quick_right {
-  compatible = "zmk,behavior-hold-tap";
-  label = "HOMEROW_MODS_QUICK";
-  flavor = "balanced";
-  tapping-term-ms = <280>;                        // <---[[produces tap if held longer than tapping-term-ms]]
-  quick-tap-ms = <125>;
-  global-quick-tap;
-  #binding-cells = <2>;
-  bindings = <&kp>, <&kp>;
-};
-
