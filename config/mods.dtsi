@@ -1,6 +1,3 @@
-#include "../zmk-nodefree-config/keypos_def/keypos_42keys.h"
-#include "../zmk-nodefree-config/helper.h"
-
 skq: sticky_key_quick_release {
   compatible = "zmk,behavior-sticky-key";
   label = "STICKY_KEY_QUICK_RELEASE";
@@ -74,9 +71,6 @@ hmq: homerow_mods_quick {
   /* retro-tap; */
 };
 
-#define KEYS_L LT0 LT1 LT2 LT3 LT4 LT5 LM0 LM1 LM2 LM3 LM4 LM5 LB0 LB1 LB2 LB3 LB4 LB5 // left-hand keys
-#define KEYS_R RT0 RT1 RT2 RT3 RT4 RT5 RM0 RM1 RM2 RM3 RM4 LM5 RB0 RB1 RB2 RB3 RB4 LB5 // right-hand keys
-#define THUMBS LH2 LH1 LH0 RH0 RH1 RH2                                      // thumb keys
 
 hm_l: homerow_mods_quick_left {
   compatible = "zmk,behavior-hold-tap";
@@ -98,23 +92,4 @@ hm_r: homerow_mods_quick_right {
   #binding-cells = <2>;
   bindings = <&kp>, <&kp>;
 };
-
-ZMK_BEHAVIOR(hml, hold_tap,  // left-hand HRMs
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <QUICK_TAP_MS>;
-    global-quick-tap-ms = <150>;        // requires PR #1387
-    bindings = <&kp>, <&kp>;
-    hold-trigger-key-positions = <KEYS_R THUMBS>;
-    hold-trigger-on-release;            // requires PR #1423
-)
-
-ZMK_BEHAVIOR(hmr, hold_tap,  // right-hand HRMs
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <QUICK_TAP_MS>;
-    global-quick-tap;
-    bindings = <&kp>, <&kp>;
-    hold-trigger-key-positions = <KEYS_L THUMBS>;
-)
 
