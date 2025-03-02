@@ -75,7 +75,6 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 
 /* Combos, leader key sequences, mouse emulation */
 
-#include "combos.dtsi" // Must be sourced after HRM-combo hack.
 #include "leader.dtsi"
 #include "mouse.dtsi"
 
