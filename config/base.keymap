@@ -189,6 +189,20 @@ ZMK_MACRO(dot_spc, bindings = <&kp DOT &kp SPACE &sk LSHFT>; wait-ms = <0>;
 ZMK_MOD_MORPH(bs_del, bindings = <&kp BSPC>, <&kp DEL>;
               mods = <(MOD_LSFT|MOD_RSFT)>; keep-mods = <MOD_RSFT>;)
 
+// tap: backspace | lshft + tap: delete | rshft + tap: shift-delete
+ZMK_MOD_MORPH(bs_del_win,
+    bindings = <&lt UC_WIN BSPC>, <&kp DEL>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    keep-mods = <MOD_RSFT>;
+)
+
+// tap: backspace | lshft + tap: delete | rshft + tap: shift-delete
+ZMK_MOD_MORPH(bs_del_osx,
+    bindings = <&lt UC_OSX BSPC>, <&kp DEL>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    keep-mods = <MOD_RSFT>;
+)
+
 // Tap: copy | double-tap: cut.
 ZMK_TAP_DANCE(copy_cut, bindings = <&kp LC(INS)>, <&kp LC(X)>;
               tapping-term-ms = <200>;)
@@ -252,7 +266,7 @@ ZMK_BASE_LAYER(base_win,
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
     ___      &kp Z         &kp X         &kp C         &kp D         &kp V       ,   &kp K         &kp H         &comma_morph  &dot_morph    &kp FSLH        ___,
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
-&lt SYS ESC                                        &lt_spc NAV_WIN 0 MAGIC_SHIFT ,   &lt FN RET    &bs_del                                               	 ___
+&lt SYS ESC                                        &lt_spc NAV_WIN 0 MAGIC_SHIFT ,   &lt FN RET    &bs_del_win                                            	 ___
 //╰──────╯                                           ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯                                           ╰──────╯
 )
 
@@ -264,7 +278,7 @@ ZMK_BASE_LAYER(base_osx,
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
     ___      &kp Z         &kp X         &kp C         &kp D         &kp V       ,   &kp K         &kp H         &comma_morph  &dot_morph    &kp FSLH        ___,
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
-&lt SYS ESC                                        &lt_spc NAV_OSX 0 MAGIC_SHIFT ,   &lt FN RET    &bs_del 	                                               ___
+&lt SYS ESC                                        &lt_spc NAV_OSX 0 MAGIC_SHIFT ,   &lt FN RET    &bs_del_osx                                               ___
 //╰──────╯                                           ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯                                           ╰──────╯
 )
 
