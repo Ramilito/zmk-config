@@ -18,7 +18,6 @@
 #define DEF_WIN 0
 #define DEF_OSX 1
 #define GAME 2
-#define NAV 3
 #define NAV_WIN 3
 #define NAV_OSX 4
 #define FN 5
