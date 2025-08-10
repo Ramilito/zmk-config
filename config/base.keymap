@@ -235,7 +235,7 @@ ZMK_TAP_DANCE(copy_cut, bindings = <&kp LC(INS)>, <&kp LC(X)>;
 // Windows keys
 #define WIN_CLOSE   &kp LA(F4)
 #define WIN_COPY    &kp LC(C)
-#define WIN_PASTE   &kp LC(P)
+#define WIN_PASTE   &kp LC(V)
 
 // Window management
 #define WIN_LEFT   &kp LC(LA(LEFT))
@@ -249,7 +249,7 @@ ZMK_TAP_DANCE(copy_cut, bindings = <&kp LC(INS)>, <&kp LC(X)>;
 #define OSX_DOWN    &kp LC(LA(DOWN))
 #define OSX_UP      &kp LC(LA(UP))
 #define OSX_COPY    &kp LG(C)
-#define OSX_PASTE   &kp LG(P)
+#define OSX_PASTE   &kp LG(V)
 
 /* Keymap */
 
