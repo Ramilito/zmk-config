@@ -234,6 +234,8 @@ ZMK_TAP_DANCE(copy_cut, bindings = <&kp LC(INS)>, <&kp LC(X)>;
 
 // Windows keys
 #define WIN_CLOSE   &kp LA(F4)
+#define WIN_COPY    &kp LC(C)
+#define WIN_PASTE   &kp LC(P)
 
 // Window management
 #define WIN_LEFT   &kp LC(LA(LEFT))
@@ -246,7 +248,8 @@ ZMK_TAP_DANCE(copy_cut, bindings = <&kp LC(INS)>, <&kp LC(X)>;
 #define OSX_CLOSE   &kp LG(Q)
 #define OSX_DOWN    &kp LC(LA(DOWN))
 #define OSX_UP      &kp LC(LA(UP))
-
+#define OSX_COPY    &kp LG(C)
+#define OSX_PASTE   &kp LG(P)
 
 /* Keymap */
 
@@ -261,9 +264,9 @@ ZMK_BASE_LAYER(base_win,
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
 &to DEF_OSX  &kp Q         &kp W         &kp F         &kp P         &kp B       ,   &kp J         &kp L         &kp U         &kp Y         &kp SQT         &smart_mouse,
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-    ___      &hml LGUI A   &hml LALT R   &hml LSHFT S  &hml LCTRL T  &kp G       ,   &kp M         &hmr LCTRL N  &hmr LSHFT E  &hmr LALT I   &hmr LGUI O     ___,
+  WIN_COPY   &hml LGUI A   &hml LALT R   &hml LSHFT S  &hml LCTRL T  &kp G       ,   &kp M         &hmr LCTRL N  &hmr LSHFT E  &hmr LALT I   &hmr LGUI O     ___,
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-    ___      &kp Z         &kp X         &kp C         &kp D         &kp V       ,   &kp K         &kp H         &comma_morph  &dot_morph    &kp FSLH        ___,
+  WIN_PASTE  &kp Z         &kp X         &kp C         &kp D         &kp V       ,   &kp K         &kp H         &comma_morph  &dot_morph    &kp FSLH        ___,
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
 &lt SYS ESC                                        &lt_spc NAV_WIN 0 MAGIC_SHIFT ,   &lt FN RET    &bs_del_win                                            	 SMART_NUM
 //╰──────╯                                           ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯                                           ╰──────╯
@@ -273,9 +276,9 @@ ZMK_BASE_LAYER(base_osx,
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
 &to DEF_WIN  &kp Q         &kp W         &kp F         &kp P         &kp B       ,   &kp J         &kp L         &kp U         &kp Y         &kp SQT         &smart_mouse,
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-    ___      &hml LGUI A   &hml LALT R   &hml LSHFT S  &hml LCTRL T  &kp G       ,   &kp M         &hmr LCTRL N  &hmr LSHFT E  &hmr LALT I   &hmr LGUI O     ___,
+  OSX_COPY   &hml LGUI A   &hml LALT R   &hml LSHFT S  &hml LCTRL T  &kp G       ,   &kp M         &hmr LCTRL N  &hmr LSHFT E  &hmr LALT I   &hmr LGUI O     ___,
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-    ___      &kp Z         &kp X         &kp C         &kp D         &kp V       ,   &kp K         &kp H         &comma_morph  &dot_morph    &kp FSLH        ___,
+  OSX_PASTE  &kp Z         &kp X         &kp C         &kp D         &kp V       ,   &kp K         &kp H         &comma_morph  &dot_morph    &kp FSLH        ___,
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
 &lt SYS ESC                                        &lt_spc NAV_OSX 0 MAGIC_SHIFT ,   &lt FN RET    &bs_del_osx                                               SMART_NUM
 //╰──────╯                                           ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯                                           ╰──────╯
