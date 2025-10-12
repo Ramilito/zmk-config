@@ -14,8 +14,6 @@
 
 #include "zmk-helpers/helper.h"
 #include "../config/sv.dtsi"
-#include "zmk-helpers/unicode-chars/greek.dtsi"
-#include "zmk-helpers/unicode-chars/german.dtsi"
 
 #define DEF_WIN 0
 #define DEF_OSX 1
@@ -236,8 +234,8 @@ ZMK_TAP_DANCE(copy_cut, bindings = <&kp LC(INS)>, <&kp LC(X)>;
 
 // Windows keys
 #define WIN_CLOSE   &kp LA(F4)
-#define WIN_COPY    &kp LC(c)
-#define WIN_PASTE   &kp LC(v)
+#define WIN_COPY    &kp LC(C)
+#define WIN_PASTE   &kp LC(V)
 
 // Window management
 #define WIN_LEFT   &kp LC(LA(LEFT))
@@ -250,8 +248,8 @@ ZMK_TAP_DANCE(copy_cut, bindings = <&kp LC(INS)>, <&kp LC(X)>;
 #define OSX_CLOSE   &kp LG(Q)
 #define OSX_DOWN    &kp LC(LA(DOWN))
 #define OSX_UP      &kp LC(LA(UP))
-#define OSX_COPY    &kp LG(c)
-#define OSX_PASTE   &kp LG(v)
+#define OSX_COPY    &kp LG(C)
+#define OSX_PASTE   &kp LG(V)
 
 /* Keymap */
 
