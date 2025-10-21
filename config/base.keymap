@@ -240,8 +240,8 @@ ZMK_TAP_DANCE(copy_cut, bindings = <&kp LC(INS)>, <&kp LC(X)>;
 // Window management
 #define WIN_LEFT   &kp LC(LA(LEFT))
 #define WIN_RIGHT  &kp LC(LA(RIGHT))
-#define WIN_DOWN   &kp LC(TAB)
-#define WIN_UP     &kp LC(LS(TAB))
+#define WIN_DOWN   &kp LC(LS(TAB))
+#define WIN_UP     &kp LC(TAB)
 #define WIN_BIG    &kp LC(LA(ENTER))
 
 // OSX keys
