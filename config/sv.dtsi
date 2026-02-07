@@ -61,7 +61,7 @@ ZMK_MACRO(sv_ae_osx_shift,
     wait-ms = <U_WAIT_MS>;
     tap-ms = <U_TAP_MS>;
 
-    bindings = <&macro_press   &kp LALT>
+    bindings = <&macro_press   &kp LALT &kp LSHFT>
              , <&macro_tap     &kp U>
              , <&macro_release &kp LALT>
              , <&macro_tap     &kp A>
@@ -96,7 +96,7 @@ ZMK_MACRO(sv_oe_osx_shift,
     wait-ms = <U_WAIT_MS>;
     tap-ms = <U_TAP_MS>;
 
-    bindings = <&macro_press   &kp LALT>
+    bindings = <&macro_press   &kp LALT &kp LSHFT>
              , <&macro_tap     &kp U>
              , <&macro_release &kp LALT>
              , <&macro_tap     &kp O>

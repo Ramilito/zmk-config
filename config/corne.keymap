@@ -5,7 +5,7 @@
 #define X_LM  &trans
 #define X_LT  &trans
 
-#define X_RH  &trnas
+#define X_RH  &trans
 #define X_RB  &trans
 #define X_RM  &trans
 #define X_RT  &trans
